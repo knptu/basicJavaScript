@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <title>Full Name</title>
+</head>
+<body>
+    <div>
+        <label for="firstname">First Name</label>
+        <input type="text" placeholder="Input first name here" id="f_name"/>
+        <label for="lastname">Last Name</label>
+        <input type="text" placeholder="Input last name here" id="l_name"/>
+        <button onclick="myFunction()"> submit </button>
+    </div>
+</body>
+<script>
+    function myFunction(){
+     var first = document.getElementById("f_name").value;
+     var last  = document.getElementById("l_name").value;
+        
+     if (first === "" || last ===""){
+         console.log("The input should not be empty");
+     } else if (first.toString().toLowerCase() === "shippop"){
+         console.log("Best Online Shipping Platform");
+     } else {
+        console.log("Hello Shippop, My name is " + first + " " + last);
+     }
+     }
+ </script>
+</html>
